@@ -1,11 +1,10 @@
-/*import { LIST } from '../actionTypes';
+import { LIST } from '../actionTypes';
 
-function createList(){
+function createList(response){
     return {
         type: LIST,
-        data: response.data.message
+        data: response
     }
 }
 
 export default createList;
-*/

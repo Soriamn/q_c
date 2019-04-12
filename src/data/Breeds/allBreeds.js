@@ -1,10 +1,9 @@
-
 const allBreeds = (state = [], action) => {
     switch(action.type) {
         case 'LIST':
-            return Object.assign({}, state, {
-                data: action.data
-            })
+            let list = Object.assign({}, state)
+            list = state.concat(action.data);
+            return list;
         default: 
             return state
     }
