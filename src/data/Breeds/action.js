@@ -1,10 +1,16 @@
 import { LIST } from '../actionTypes';
+import { REM_LIST } from '../actionTypes';
 
-function createList(response){
+export function createList(response){
     return {
         type: LIST,
         data: response
     }
 }
 
-export default createList;
+export function removeList(){
+    return {
+        type: REM_LIST
+    }
+}
+

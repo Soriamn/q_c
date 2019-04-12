@@ -3,6 +3,7 @@ import { BrowserRouter, Route} from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import List from './components/List';
+import Detail from './components/Detail';
 
 class App extends Component {
 
@@ -13,7 +14,14 @@ class App extends Component {
           <header>
             <Header/>
           </header>
-          <Route path="/" component={ List }/>          
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <Route exact path="/" component={ List }/>
+                <Route exact path="/:breed" component={ Detail }/>
+              </div>  
+            </div>    
+          </div>                    
         </div>      
       </BrowserRouter>
 

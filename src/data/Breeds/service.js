@@ -1,4 +1,4 @@
-import createList from './action';
+import { createList } from './action';
 import axios from 'axios';
 
 export const getBreeds = (dispatch) => {

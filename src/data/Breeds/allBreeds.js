@@ -4,6 +4,11 @@ const allBreeds = (state = [], action) => {
             let list = Object.assign({}, state)
             list = state.concat(action.data);
             return list;
+        
+        case 'REM_LIST':
+            let rList = Object.assign({}, state)
+            rList = state;
+            return rList;
         default: 
             return state
     }
