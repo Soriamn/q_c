@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 1- Clone the repository:
 ```
-git clone https://github.com/Soriamn/q_challenge.git
+git clone https://github.com/Soriamn/q_c.git
 ```
 
 2- Enter the folder and install dependencies:
