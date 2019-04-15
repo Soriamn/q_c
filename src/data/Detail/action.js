@@ -1,10 +1,15 @@
-import { DET } from '../actionTypes';
+import { DET, REM_IMG } from '../actionTypes';
 
-function detail(response){
+export function detail(response) {
     return {
         type: DET,
         data: response
     }
 }
 
-export default detail;
+export function delImage(response) {
+    return {
+        type: REM_IMG
+    }
+}
+

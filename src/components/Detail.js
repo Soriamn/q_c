@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { getDetail } from '../data/Detail/service'
+import { getDetail } from '../data/Detail/service';
+import { delImage } from '../data/Detail/action';
 
 class Detail extends Component {
 
     componentDidMount(){
         this.props.getImage();
+    }
+
+    componentWillUnmount() {
+        this.props.unmImage();
     }
 
     render(){
@@ -17,7 +22,7 @@ class Detail extends Component {
     }
 }
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
     return{
         detail: state.detail
     }
@@ -27,6 +32,10 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     return{
         getImage: () => {
             getDetail( dispatch, ownProps );
+        },
+
+        unmImage: () => {
+            dispatch( delImage() );
         }
     }
 }

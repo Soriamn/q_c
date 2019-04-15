@@ -6,7 +6,11 @@ const detail = (state = {}, action) => {
                 image : action.data
             })
             return image;
-
+        
+        case 'REM_IMG': 
+            let img = Object.assign({}, state);
+            img = {};
+            return img; 
         default: 
             return state
     }

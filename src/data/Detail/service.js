@@ -1,4 +1,4 @@
-import detail from './action'
+import { detail } from './action'
 import axios from 'axios';
 
 export const getDetail = (dispatch, ownProps) => {
