@@ -7,7 +7,7 @@ const allBreeds = (state = [], action) => {
         
         case 'REM_LIST':
             let rList = Object.assign({}, state)
-            rList = state;
+            rList = [];
             return rList;
         default: 
             return state

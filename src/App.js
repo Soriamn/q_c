@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route} from 'react-router-dom';
 import './App.css';
-import Header from './Components/Header';
-import List from './Components/List';
-import Detail from './Components/Detail';
+import Header from './components/Header';
+import List from './components/List';
+import Detail from './components/Detail';
 
 class App extends Component {
 
